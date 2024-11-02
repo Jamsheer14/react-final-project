@@ -1,0 +1,274 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* General page styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Updated font for a modern look */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+}
+
+/* Navbar styling */
+nav {
+  background: linear-gradient(45deg, #333, black); /* Gradient background */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-transform: uppercase; /* Text in uppercase for emphasis */
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #ff00ae;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Glow effect on hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+nav a.active {
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+}
+
+/* Page container styling */
+.page-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%); /* Soft gradient */
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Section styling */
+.home-page,
+.veg-page,
+.nonveg-page,
+.cart-page,
+.aboutus-page,
+.contactus-page,
+.purchasehistory-page {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Light shadow for card effect */
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-page:hover,
+.veg-page:hover,
+.nonveg-page:hover,
+.cart-page:hover,
+.aboutus-page:hover,
+.contactus-page:hover,
+.purchasehistory-page:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Shadow increase */
+}
+
+/* Headings styling */
+h1 {
+  color: #007bff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/* Paragraph styling */
+p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  background-color:black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color:black;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Button hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .page-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 15px;
+  background-color: #333; 
+}
+
+nav a {
+  color: white; 
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Font size */
+  padding: 10px 15px; /* Padding around links */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+  color: #333; /* Link color on hover */
+  background-color: #fff; /* Background color on hover */
+  border-radius: 5px; /* Rounds edges on hover */
+}
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar container styling */
+.navbar {
+  display: flex;                /* Align links horizontally */
+  justify-content: center;      /* Center the links */
+  background-color: #333;       /* Dark background for navbar */
+  padding: 15px;                /* Padding for the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* General link styling */
+.navbar a {
+  text-decoration: none;        /* Removes underline */
+  color: #f8f9fa;               /* Light text color */
+  padding: 12px 20px;           /* Adds padding around links */
+  margin: 0 10px;               /* Adds space between links */
+  font-size: 16px;              /* Sets font size */
+  font-weight: bold;            /* Makes text bold */
+  border-radius: 5px;           /* Adds rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+  background-color: #555;       /* Darkens background on hover */
+  color: #ffffff;               /* Changes text color on hover */
+}
+
+/* Active link styling */
+.navbar a:active {
+  background-color:black;    /* Highlights background when active */
+  color: red;                  /* Sets text color when active */
+}
+
+/* Custom colors for each link */
+.navbar a[href="/home"] {
+  color: #1e90ff;               /* Custom color for Home link */
+}
+
+.navbar a[href="/addcart"] {
+  color:black;               /* Custom color for AddCart link */
+}
+
+.navbar a[href="/purchasehistory"] {
+  color:black;               /* Custom color for Purchase History link */
+}
+
+.navbar a[href="/veg"] {
+  color:black;               /* Custom color for Veg link */
+}
+
+.navbar a[href="/non-veg"] {
+  color:black;              /* Custom color for NonVeg link */
+}
+
+.navbar a[href="/contactus"] {
+  color:black;               /* Custom color for ContactUs link */
+}
+
+.navbar a[href="/aboutus"] {
+  color:black;               /* Custom color for AboutUs link */
+}
+
